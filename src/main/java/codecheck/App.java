@@ -1,10 +1,12 @@
 package codecheck;
 
 public class App {
+
+	public static String output(String input) {
+		return "Hello " + input + "!";
+	}
+
 	public static void main(String[] args) {
-		for (int i = 0, l = args.length; i < l; i++) {
-			String output = String.format("argv[%s]: %s", i, args[i]);
-			System.out.println(output);
-		}
+		System.out.println(output(args[0]));
 	}
 }
